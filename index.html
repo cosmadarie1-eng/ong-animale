@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Asociația O Nouă Șansă - Salvează un suflet, schimbă o viață. Organizație dedicată protecției animalelor.">
+    <meta name="author" content="Student Proiect">
+    <title>O Nouă Șansă | ONG Protecția Animalelor</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <style>
+        :root {
+            --primary-color: #f39c12;
+            --secondary-color: #2c3e50;
+        }
+        body {
+            font-family: 'Montserrat', sans-serif;
+            scroll-behavior: smooth;
+            overflow-x: hidden;
+            background-color: #ffffff;
+        }
+        h1, h2, h3, h4 {
+            font-family: 'Quicksand', sans-serif;
+            font-weight: 700;
+        }
+
+        /* Navigație Responsive */
+        .navbar-brand {
+            font-weight: 700;
+            color: var(--primary-color) !important;
+        }
+
+        /* Carusel Adaptiv */
+        #dogHeroCarousel .carousel-item img {
+            height: 60vh; /* Se adaptează înălțimii ecranului */
+            min-height: 300px;
+            object-fit: cover;
+        }
+        .carousel-caption {
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 15px;
+            padding: 15px;
+            max-width: 80%;
+            left: 10%;
+        }
+
+        /* Secțiuni */
+        section {
+            padding: 60px 0;
+        }
+        .bg-custom {
+            background-color: #f8f9fa;
+        }
+
+        /* Carduri Responsive cu prețuri */
+        .card {
+            transition: transform 0.3s, box-shadow 0.3s;
+            border: none;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        }
+        .card-img-top {
+            height: 200px;
+            object-fit: cover;
+        }
+        .price-tag {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--primary-color);
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 40px 0;
+        }
+        .social-icons a {
+            color: white;
+            font-size: 1.5rem;
+            margin: 0 10px;
+            transition: 0.3s;
+        }
+        .social-icons a:hover {
+            color: var(--primary-color);
+        }
+
+        /* Ajustări Mobile */
+        @media (max-width: 768px) {
+            h1 { font-size: 1.8rem; }
+            h2 { font-size: 1.5rem; }
+            .carousel-caption { padding: 10px; bottom: 10%; }
+            .carousel-caption p { font-size: 0.9rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="#acasa">
+                <i class="bi bi-heart-pulse-fill"></i> O NOUĂ ȘANSĂ
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto text-uppercase fw-bold">
+                    <li class="nav-item"><a class="nav-link" href="#acasa">Acasă</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#misiune">Misiune</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#servicii">Servicii</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#comunitate">Comunitate</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header id="acasa">
+        <div id="dogHeroCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="animalute%20(9).jpg" class="d-block w-100" alt="Cățeluș fericit pe fundal albastru">
+                    <div class="carousel-caption">
+                        <h1>Speranță pentru fiecare suflet</h1>
+                        <p>Ajută-ne să oferim o nouă șansă animalelor fără adăpost.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="animalute%20(1).jpg" class="d-block w-100" alt="Cățel la sesiunea de îngrijire">
+                    <div class="carousel-caption">
+                        <h2>Igienă și Sănătate</h2>
+                        <p>Toți locatarii noștri primesc îngrijire medicală și toaletare.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="animalute%20(2).jpg" class="d-block w-100" alt="Câine în recuperare medicală">
+                    <div class="carousel-caption">
+                        <h2>Recuperare completă</h2>
+                        <p>Luptăm pentru refacerea fiecărui câine salvat de pe stradă.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="animalute%20(4).jpg" class="d-block w-100" alt="Cățel în jachetă verde">
+                    <div class="carousel-caption">
+                        <h2>Gata de o nouă familie</h2>
+                        <p>Vino să cunoști prietenii noștri care își caută un stăpân.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="animalute%20(10).jpg" class="d-block w-100" alt="Cățel jucăuș">
+                    <div class="carousel-caption">
+                        <h2>Personalități Vibrante</h2>
+                        <p>Fiecare animal are o poveste care așteaptă un final fericit.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#dogHeroCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#dogHeroCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Următor</span>
+            </button>
+        </div>
+    </header>
+
+    <section id="misiune">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6">
+                    <h2 class="mb-4">Misiunea Noastră: O Nouă Șansă</h2>
+                    <p class="lead text-muted">Suntem o organizație studențească dedicată protecției animalelor și promovării adopțiilor responsabile.</p>
+                    <p>Lucrăm zilnic pentru a salva, reabilita și integra câinii abandonați în familii care le pot oferi siguranță. Nu suntem doar un adăpost, suntem puntea lor către o viață mai bună.</p>
+                    <a href="#contact" class="btn btn-warning btn-lg shadow-sm">Citește mai mult</a>
+                </div>
+                <div class="col-lg-6">
+                    <img src="animalute%20(7).jpg" class="img-fluid rounded shadow-lg" alt="Portret cățeluș pentru adopție">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="servicii" class="bg-custom">
+        <div class="container text-center">
+            <h2 class="mb-5">Programe de Susținere</h2>
+            <div class="row g-4">
+                <div class="col-sm-6 col-lg-3">
+                    <div class="card h-100">
+                        <img src="animalute%20(8).jpg" class="card-img-top" alt="Cățel cu hanorac galben">
+                        <div class="card-body">
+                            <span class="badge bg-danger mb-2">Ofertă Specială</span>
+                            <h4 class="card-title">Pachet Stil</h4>
+                            <p class="card-text text-muted">Hăinuță personalizată</p>
+                            <div class="price-tag mb-3">120 RON</div>
+                            <button class="btn btn-outline-warning w-100">Adoptă stilul</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="card h-100 border-warning">
+                        <img src="animalute%20(6).jpg" class="card-img-top" alt="Cățel în haine negre">
+                        <div class="card-body">
+                            <span class="badge bg-success mb-2">Recomandat</span>
+                            <h4 class="card-title">Sponsor VIP</h4>
+                            <p class="card-text text-muted">Abonament lunar hrană</p>
+                            <div class="price-tag mb-3">200 RON / lună</div>
+                            <button class="btn btn-warning w-100">Deveniți Sponsor</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="card h-100">
+                        <img src="animalute%20(5).jpg" class="card-img-top" alt="Cățel în cămașă cu banane">
+                        <div class="card-body">
+                            <span class="badge bg-primary mb-2">Popular</span>
+                            <h4 class="card-title">Adopție Simbolică</h4>
+                            <p class="card-text text-muted">Kit de bun venit</p>
+                            <div class="price-tag mb-3">50 RON / set</div>
+                            <button class="btn btn-outline-warning w-100">Susține acum</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="card h-100">
+                        <img src="animalute%20(3).jpg" class="card-img-top" alt="Cățel la baie">
+                        <div class="card-body">
+                            <span class="badge bg-info text-white mb-2">Serviciu Nou</span>
+                            <h4 class="card-title">Grooming Complet</h4>
+                            <p class="card-text text-muted">Sesiune de toaletare</p>
+                            <div class="price-tag mb-3">85 RON / oră</div>
+                            <button class="btn btn-outline-warning w-100">Programare</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="comunitate">
+        <div class="container text-center">
+            <h2 class="mb-5">Impactul Nostru</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="p-4 bg-light rounded shadow-sm">
+                        <i class="bi bi-house-heart display-3 text-warning"></i>
+                        <h3 class="mt-3">500+</h3>
+                        <p>Căței care și-au găsit o familie iubitoare prin eforturile noastre.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-4 bg-light rounded shadow-sm">
+                        <i class="bi bi-people-fill display-3 text-warning"></i>
+                        <h3 class="mt-3">120</h3>
+                        <p>Voluntari studenți dedicați cauzei în fiecare săptămână.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-4 bg-light rounded shadow-sm">
+                        <i class="bi bi-hospital-fill display-3 text-warning"></i>
+                        <h3 class="mt-3">24/7</h3>
+                        <p>Asistență medicală de urgență pentru cazurile salvate.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <h5 class="fw-bold mb-3">Asociația O Nouă Șansă</h5>
+                    <p class="small text-light">Misiunea noastră este să oferim o voce celor care nu se pot apăra. Împreună schimbăm destine.</p>
+                    <p class="small mt-4">&copy; 2025 O Nouă Șansă. Toate drepturile rezervate.</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <h5 class="fw-bold mb-3">Contact</h5>
+                    <p class="mb-1"><i class="bi bi-geo-alt"></i> București, Sector 6, Str. Campusului</p>
+                    <p class="mb-1"><i class="bi bi-telephone"></i> +40 700 000 000</p>
+                    <p><i class="bi bi-envelope"></i> contact@onouasansa.ro</p>
+                </div>
+                <div class="col-md-4 text-md-end text-center">
+                    <h5 class="fw-bold mb-3">Urmărește-ne</h5>
+                    <div class="social-icons">
+                        <a href="https://facebook.com"><i class="bi bi-facebook"></i></a>
+                        <a href="https://instagram.com"><i class="bi bi-instagram"></i></a>
+                        <a href="https://tiktok.com"><i class="bi bi-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
